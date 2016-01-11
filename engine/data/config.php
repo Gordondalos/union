@@ -6,19 +6,21 @@ $config = array (
 
 'home_title' => 'DataLife Engine',
 
-'http_home_url' => 'http://localhost/greensoft/',
+'http_home_url' => 'http://localhost/union/',
 
 'charset' => 'utf-8',
 
-'description' => 'Демонстрационная страница движка DataLife Engine',
+'description' => 'Сайт компании Юнион',
 
 'keywords' => 'DataLife, Engine, CMS, PHP движок',
 
-'short_title' => 'Демонстрационный сайт',
+'short_title' => 'Сайт компании Юнион',
 
 'start_site' => '1',
 
 'date_adjust' => 'Europe/Moscow',
+
+'allow_alt_url' => '1',
 
 'seo_type' => '2',
 
@@ -293,8 +295,6 @@ $config = array (
 'allow_complaint_mail' => '0',
 
 'site_offline' => '0',
-
-'allow_alt_url' => '0',
 
 'log_hash' => '0',
 

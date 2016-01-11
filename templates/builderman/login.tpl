@@ -5,8 +5,8 @@
 			Добро пожаловать, {login} (<a href="{logout-link}" class="lu-link">выйти</a>)
 		</div>
 		<div class="l-link">
-			<!--[admin-link]<a href="{admin-link}" class="admin-link" target="_blank">Админцентр</a>[/admin-link]-->
-			<!--<a href="{addnews-link}" class="add-link">Опубликовать</a>-->
+<!--			[admin-link]<a href="{admin-link}" class="admin-link" target="_blank">Админцентр</a>[/admin-link]-->
+<!--			<a href="{addnews-link}" class="add-link">Опубликовать</a>-->
 			<a href="{profile-link}" class="profile-link"><img src="{THEME}/images/icon1.png" alt="icon" /> Профиль</a>
 			<a href="{pm-link}" class="pm-link"><img src="{THEME}/images/icon2.png" alt="icon" /> Почта ({new-pm} | {all-pm})</a>	
 			<a href="{favorites-link}"><img src="{THEME}/images/icon3.png" alt="icon" /> Избранное ({favorite-count})</a>

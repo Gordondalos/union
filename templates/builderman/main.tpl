@@ -19,7 +19,7 @@
 <div class="body">
 	<div class="main">
 		<div class="header">
-			<a href="/" class="logo"></a>
+			<a href="." class="logo"></a>
 			<div class="search-block">
 				<form method="post"  action='' style="margin: 0;padding: 0;">
 					<input type="hidden" name="do" value="search"><input type="hidden" name="subaction" value="search" />
@@ -37,27 +37,21 @@
 				[/not-group]
 			</div>
 		</div>
+
+
+
+
 		<div class="top-menu-block">
+
+
+
 			<ul>                                                                                                                                                   
 				<li>                                                             
-					<a href="#" class="menu-link">Главная</a>
-				</li>                                                                                                  
-				<li>
-					<a href="#" class="menu-link">Компании</a>
-				</li>
-				<li>
-					<a href="#" class="menu-link">Новости</a>
-				</li>
-				<li>
-					<a href="#" class="menu-link">Статьи</a>
-				</li>
-				<li>
-					<a href="#" class="menu-link">Фотогалерея</a>
+					<a href="." class="menu-link">Главная</a>
 				</li>
 
-				<li>
-					<a href="#" class="menu-link">Контакты</a>
-				</li>
+				{include file="engine/modules/categorymenu/controller/staticmenu.php"}
+
 			</ul>
 			<div style="clear: both;"></div>
 		</div>
@@ -70,36 +64,34 @@
 					<div class="item-title" style="background: none; padding: 0px;">Каталог товаров и работ</div>
 					<div class="item-content">
 						<div class="menu-left">
-							<a href="#">Ямочный Ремонт</a>
-							<a href="#">Прокладка ВОЛС</a>
-							<a href="#">Асфальтные работы</a>
-							<a href="#">Доставка Грузов</a>
-							<a href="#">Прокладка коммуникаций</a>
-							<a href="#">Фотоотчеты</a>
-							<a href="#">Цех пластиковых Окон</a>
+							{include file="engine/modules/categorymenu/controller/Categorymenu.php"}
 						</div>
 					</div>
 				</div>
+
 				<div class="item">
-					<div class="item-title"><img src="{THEME}/images/title-icon1.png" alt="title-icon" /> Статьи о ремонте</div>
+					<div class="item-title"><img src="{THEME}/images/title-icon1.png" alt="title-icon" />Наши проекты</div>
 					<div class="item-content">
-						{custom category="" template="article" aviable="global" from="0" limit="3" cache="no"}
+						{custom category="7" template="article" aviable="global" from="0" limit="3" cache="no"}
 					</div>
 				</div>
 				<div style="clear: both; height: 13px;"></div>
-				<div class="item">
-					<div class="item-title"><img src="{THEME}/images/title-icon2.png" alt="title-icon" /> опрос</div>
-					<div class="item-content">
-						{vote}
-					</div>
-				</div>
+
+<!--				<div class="item">-->
+<!--					<div class="item-title"><img src="{THEME}/images/title-icon2.png" alt="title-icon" />Это интересно</div>-->
+<!--					<div class="item-content">-->
+<!--						{custom category="7" template="article" aviable="global" from="0" limit="3" cache="no"}-->
+<!--						{vote}-->
+<!--					</div>-->
+<!--				</div>-->
+
 			</div>
 			<div class="right-col">	
 				[aviable=main]
 				<div class="item">
 					<div class="item-title" style="background: none; padding: 0px;">
 						<img src="{THEME}/images/title-icon3.png" alt="title-icon" /> Популярные новости
-						<a href="#" class="all">Новости</a>
+<!--						<a href="#" class="all">Новости</a>-->
 					</div>
 					<div class="item-content">
 						<ul id="foo1">
@@ -114,15 +106,15 @@
 				<div class="item">
 					<div class="item-title"><img src="{THEME}/images/title-icon4.png" alt="title-icon" /> Наше Видео</div>
 					<div class="item-content">
-						{custom category="1" template="video" aviable="global" from="0" limit="6" cache="no"}
+						{custom category="7" template="video" aviable="global" from="0" limit="6" cache="no"}
 						<div style="clear: both;"></div>
 					</div>
 				</div>
 				<div class="item">
-					<div class="item-title"><img src="{THEME}/images/title-icon5.png" alt="title-icon" /> Полезные советы</div>
+					<div class="item-title"><img src="{THEME}/images/title-icon5.png" alt="title-icon" />Последние новости</div>
 					<div class="item-content">
 						<div class="sovet-block">
-							{custom category="1" template="sovet" aviable="global" from="0" limit="3" cache="no"}
+							{custom category="7" template="sovet" aviable="global" from="0" limit="3" cache="no"}
 							<div class="man"></div>
 						</div>
 					</div>
@@ -140,17 +132,14 @@
 		<div style="clear: both; height: 30px;"></div>
 		<div class="footer">
 			<a href="#" class="logo2"></a>
-			<div class="footer-menu">                                                               
-				<a href="#">Главная</a>
-				<a href="#">Компании</a>
-				<a href="#">Новости</a>
-				<a href="#">Статьи</a>
-				<a href="#">Фотогалерея</a>
-				<a href="#">Контакты</a>
+			<div class="footer-menu">
+
+				<a href="." class="menu-link">Главная</a>
+				{include file="engine/modules/categorymenu/controller/staticmenu.php"}
 				<div style="clear: both;"></div>
 			</div>
 			<div class="copir">
-				Разработка - <a href="/">Test</a>
+				Разработка - <a href="http:\\gordondalos.github.io">Gordondalos</a>
 			</div>
 			<div style="clear: both;"></div>
 		</div>
