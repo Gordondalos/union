@@ -67,7 +67,7 @@
     padding: 5px;
     color: #3a78a5;
     margin: 0 0 1em;
-    0;
+
 }
 
 .hide a {
@@ -1157,9 +1157,8 @@ pre .tex .formula {
       background: #e6e6e6;
       background-repeat: repeat-x;
       background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fdfdfd), color-stop(100%, #e6e6e6));
-      background-image: -webkit-linear-gradient(top, #fdfdfd, 0%, #e6e6e6, 100%);
-      background-image: -moz-linear-gradient(top, #fdfdfd, 0%, #e6e6e6, 100%);
-      background-image: -o-linear-gradient(top, #fdfdfd, 0%, #e6e6e6, 100%);
+
+
       background-image: linear-gradient(to bottom, #fdfdfd 0%, #e6e6e6 100%);
       -webkit-transition: box-shadow 0.05s ease-in-out;
       -moz-transition: box-shadow 0.05s ease-in-out;

@@ -24,7 +24,7 @@ $config = array (
 
 'langs' => 'Russian',
 
-'skin' => 'Greensoft',
+'skin' => 'builderman',
 
 'allow_admin_wysiwyg' => '0',
 
@@ -250,7 +250,7 @@ $config = array (
 
 'o_seite' => '0',
 
-'max_up_size' => '200',
+'max_up_size' => '100000',
 
 'max_image_days' => '2',
 
